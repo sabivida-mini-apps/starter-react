@@ -1,0 +1,29 @@
+{
+  "name": "my-sabivida-mini-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SabiVida mini app built with React, Vite and TypeScript.",
+  "scripts": {
+    "dev": "vite",
+    "dev:mock": "node scripts/dev-mock.mjs http://localhost:4320/ vite --port 4320 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "jose": "^6.2.13",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.5",
+    "wrangler": "^4.152.0"
+  }
+}
